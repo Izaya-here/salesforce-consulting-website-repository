@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
+            </div>
+            <div class="nav-wrapper">
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </nav>
+    </div>
+      
+    <div class="main-content">
+        <div class="content-wrapper">
+            <div class="left-section">
+                <header>
+                    <h1>Welcome to Blue Trail!</h1>
+                    <p>Discover the perfect CRM with our expert Salesforce consulting services for growing businesses.</p>
+                    <a href="packages.html" class="get-started-btn">Get Started</a>
+                </header>
+            </div>
+            <div class="right-section">
+                <img src="lady-oval.png" alt="lady in oval hole">
+            </div>
+        </div>
+    </div>
+    
+    <section class="three-columns">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>Content for column 1...</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Content for column 2...</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Content for column 3...</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <p>&copy; 2023 Blue Trail. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
+
+</body>
+</html>
+
+
+
+
+

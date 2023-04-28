@@ -1,0 +1,385 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  margin: 0;
+  padding: 0;
+}
+
+header, section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #032d60;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* General styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2px 20px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  margin-left: auto;
+}
+
+nav a {
+  color: #032d60;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+nav a:hover {
+  color: #0B78EE;
+}
+
+footer {
+  background-color: #032d60;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.nav-container {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  max-height: 50px;
+  margin-right: 20px;
+}
+
+.main-content {
+  padding-top: 80px;
+  padding: 20px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('header-bg.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  min-height: 400px; /* Adjust this value according to your needs */
+}
+
+
+.main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.left-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.024em;
+  text-align: center;
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+  max-height: 750px;
+  object-fit: cover;
+}
+
+.get-started-btn {
+  display: inline-block;
+  background-color: #032d60;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.get-started-btn:hover {
+  background-color: #0B78EE;
+  ;
+  color: #032d60;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #032d60;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #333333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+/* Add this to your existing styles.css file */
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #032d60;
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Adjust this value according to your nav height */
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  min-width: 150px;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  text-align: left;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-links.active {
+    display: block;
+  }
+  
+  .nav-links li {
+    display: block;
+    margin: 0;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 60px; /* Adjust this value according to your nav height */
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    min-width: 150px;
+  }
+  
+  .nav-links li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-links a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.column {
+  flex-basis: calc(33% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .column {
+    flex-basis: 100%;
+  }
+}
+
+/* Extra-small devices (phones, portrait mode, up to 576px) */
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (phones, landscape mode, from 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, from 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Add styles for medium devices */
+}
+
+/* Large devices (desktops, from 993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Add styles for large devices */
+}
+
+/* Extra-large devices (large desktops, 1201px and up) */
+@media (min-width: 1201px) {
+  /* Add styles for extra-large devices */
+}
+
+  

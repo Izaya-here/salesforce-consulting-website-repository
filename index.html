@@ -16,10 +16,11 @@
             </div>
             <div class="nav-wrapper">
               <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="#main-content">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#three-columns">Benefits</a></li>
+                <li><a href="#video-background-section">Sox Compliant</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
               </ul>
             </div>
             <div class="menu-icon" onclick="toggleMenu()">
@@ -34,6 +35,7 @@
         <div class="content-wrapper">
             <div class="left-section">
                 <header>
+                  <section id="main-content"></section>
                     <h1>Let's improve your business together, hop on the Blue Trail</h1>
                     <p>Discover the perfect CRM with our expert Salesforce consulting services for growing businesses.</p>
                     <a href="packages.html" class="get-started-btn">Get Started</a>
@@ -44,36 +46,92 @@
             </div>
         </div>
     </div>
-    
+    <div class="transition-container">
     <section class="about-us">
         <div class="about-us-content">
           <div class="left-section-2">
+            <section id="about-us"></section>
             <h2>About Us</h2>
             <div class="about-us-image">
               <img src="21333-writer.gif" alt="About Us Image">
             </div>
           </div>
           <div class="right-section-2">
-            <p>At Blue Trail, our mission is to become the go-to Salesforce consulting firm for small businesses, recognized for our dedication to customer success, deep expertise, and commitment to building lasting relationships. We strive to help our clients navigate the ever-evolving Salesforce landscape, delivering tailored solutions that drive measurable results and position them for long-term success.</p>
+            <p> Blue Trail is a Houston-based Salesforce consulting firm operating as a sole proprietorship. 
+              Our primary focus is to deliver tailored Salesforce solutions for small businesses, helping them thrive in a competitive market. 
+              We are committed to providing our clients with exceptional service, guiding them through the complexities of the Salesforce ecosystem with our extensive expertise.
+            </p>
+            <p>At Blue Trail, our mission is to become the go-to Salesforce consulting firm for small businesses, recognized for our dedication to customer success, 
+              deep expertise, and commitment to building lasting relationships. We strive to help our clients navigate the ever-evolving Salesforce landscape, 
+              delivering tailored solutions that drive measurable results and position them for long-term success.
+            </p>
           </div>
         </div>
     </section>
       
       
     <section class="three-columns">
-        <div class="column">
-            <h2>Efficient</h2>
-            <p>Processes and enhances collaboration, enabling businesses to close deals faster and improve customer relationships.</p>
+      <div class="benefits-section">
+        <div class="tc_title">
+          <section id="three-columns"></section>
+            <h2>Benefits</h2>
         </div>
-        <div class="column">
-            <h2>Adaptive</h2>
-            <p>Scalable and customizable, adapts to a company's evolving needs, ensuring seamless integration with new tools and features.</p>
-        </div>
-        <div class="column">
-            <h2>Insightful</h2>
-            <p>Provides valuable data insights and analytics, empowering businesses to make informed decisions and drive growth.</p>
-        </div>   
+        <section class="three-columns">
+            <div class="column">
+                <h2>Efficient</h2>
+                <p>Processes and enhances collaboration, enabling businesses to close deals faster and improve customer relationships.</p>
+            </div>
+            <div class="column">
+                <h2>Adaptive</h2>
+                <p>Scalable and customizable, adapts to a company's evolving needs, ensuring seamless integration with new tools and features.</p>
+            </div>
+            <div class="column">
+                <h2>Insightful</h2>
+                <p>Provides valuable data insights and analytics, empowering businesses to make informed decisions and drive growth.</p>
+            </div>   
+        </section>
+      </div>
+      
     </section>
+  </div>
+
+  <section class="video-background-section">
+    <video autoplay muted loop id="bgVideo">
+      <source src="bgvideo.mov" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="video-content">
+      <div class="content-box">
+        <section id="video-background-section"></section>
+        <h1>SOX Compliance</h1>
+        <p>Blue Trail is dedicated to ensuring your business and its processes remain fully compliant 
+          with the Sarbanes-Oxley (SOX) regulations. Our comprehensive approach includes 
+          implementing robust internal controls, continuous monitoring, and conducting regular 
+          audits to safeguard the integrity of financial reporting. We work closely with your 
+          organization to identify potential risks, establish appropriate controls, and ensure ongoing 
+          adherence to SOX requirements. By partnering with Blue Trail, you can have peace of mind 
+          knowing that your company's financial data and reporting practices are protected, transparent, 
+          and compliant, minimizing the risk of penalties and preserving your organization's reputation in the market.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="contact-section">
+    <div class="contact-content">
+      <section id="contact-section"></section>
+      <h2>Contact Us</h2>
+      <p>Set-Up a free consultation with us today.</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="company_name" placeholder="Company Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
     <footer>
         <div class="footer-wrapper">

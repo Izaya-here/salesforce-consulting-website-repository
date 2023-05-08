@@ -1,156 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-</head>
-<body>
-    <div class="nav-container">
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
-            </div>
-            <div class="nav-wrapper">
-              <ul class="nav-links">
-                <li><a href="#main-content">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#three-columns">Benefits</a></li>
-                <li><a href="#video-background-section">Sox Compliant</a></li>
-                <li><a href="#contact-section">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="menu-icon" onclick="toggleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-        </nav>
-    </div>
-      
-    <div class="main-content">
-        <div class="content-wrapper">
-            <div class="left-section">
-                <header>
-                  <section id="main-content"></section>
-                    <h1>Let's improve your business together, hop on the Blue Trail</h1>
-                    <p>Discover the perfect CRM with our expert Salesforce consulting services for growing businesses.</p>
-                    <a href="https://forms.gle/hs3FEi8eEF5y9rhd6" class="get-started-btn">Get Started</a>
-                </header>
-            </div>
-            <div class="right-section">
-                <img src="lady-oval.png" alt="lady in oval hole">
-            </div>
-        </div>
-    </div>
-    <div class="transition-container">
-    <section class="about-us">
-        <div class="about-us-content">
-          <div class="left-section">
-            <section id="about-us"></section>
-            <h2>About Us</h2>
-            <div class="about-us-image">
-              <img src="21333-writer.gif" alt="About Us Image">
-            </div>
-          </div>
-          <div class="right-section">
-            <p> Blue Trail is a Houston-based Salesforce consulting firm operating as a sole proprietorship. 
-              Our primary focus is to deliver tailored Salesforce solutions for small businesses, helping them thrive in a competitive market. 
-              We are committed to providing our clients with exceptional service, guiding them through the complexities of the Salesforce ecosystem with our extensive expertise.
-            </p>
-            <p>At Blue Trail, our mission is to become the go-to Salesforce consulting firm for small businesses, recognized for our dedication to customer success, 
-              deep expertise, and commitment to building lasting relationships. We strive to help our clients navigate the ever-evolving Salesforce landscape, 
-              delivering tailored solutions that drive measurable results and position them for long-term success.
-            </p>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Salesforce Consulting</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" href="assets/img/favicons/blue-train-favicon-32x32.png">
+    <link rel="icon" type="image/png" href="assets/img/favicons/blue-train-favicon-32x32.png">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html">
+          <img class="me-3 d-inline-block site-logo" src="assets/img/logo.png" alt="logo" />
+        </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto pt-2 pt-lg-0 font-base">
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" aria-current="page" href="#home">Home</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" href="#aboutus">About Us</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" href="#benefits">Benefits</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" href="#soxcompliant">Sox Compliant</a></li>
+            </ul>
+            <a class="btn hover-top btn-collab text-uppercase" href="#contactus">contact us</a>
           </div>
         </div>
-    </section>
-      
-      
-    <section class="three-columns">
-      <div class="benefits-section">
-        <div class="tc_title">
-          <section id="three-columns"></section>
-            <h2>Benefits</h2>
-        </div>
-        <section class="three-columns">
-            <div class="column">
-                <h2>Efficient</h2>
-                <p>Processes and enhances collaboration, enabling businesses to close deals faster and improve customer relationships.</p>
+      </nav>
+      <section id="home" class="section-home">
+        <div class="container">
+          <div class="row align-items-center g-2">
+            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-center">
+              <img class="pt-7 pt-md-0 pic-lady" src="assets/img/gallery/employee.png" alt="hero-header" />
             </div>
-            <div class="column">
-                <h2>Adaptive</h2>
-                <p>Scalable and customizable, adapts to a company's evolving needs, ensuring seamless integration with new tools and features.</p>
+            <div class="col-md-7 col-lg-6 py-6 text-md-start text-center">
+              <h1 class="fw-bold fs-4 fs-lg-6 fs-xxl-7 text-primary"> Let's improve your<br>business together,<br>hop on the Blue Trail</h1>
+              <p class="mb-5 fs-1 fw-medium">Discover the perfect CRM with our expert Salesforce consulting<br class="d-none d-xl-block" />services for growing businesses.</p>
+              <a class="btn hover-top btn-collab text-uppercase" href="https://forms.gle/hs3FEi8eEF5y9rhd6" target="_blank">
+                <i class="fas fa-play me-2"></i> get started
+              </a>
             </div>
-            <div class="column">
-                <h2>Insightful</h2>
-                <p>Provides valuable data insights and analytics, empowering businesses to make informed decisions and drive growth.</p>
-            </div>   
-        </section>
-      </div>
-      
-    </section>
-  </div>
-
-  <section class="video-background-section">
-    <video autoplay muted loop id="bgVideo">
-      <source src="bgvideo.mov" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="video-content">
-      <div class="content-box">
-        <section id="video-background-section"></section>
-        <h1>SOX Compliance</h1>
-        <p>Blue Trail is dedicated to ensuring your business and its processes remain fully compliant 
-          with the Sarbanes-Oxley (SOX) regulations. Our comprehensive approach includes 
-          implementing robust internal controls, continuous monitoring, and conducting regular 
-          audits to safeguard the integrity of financial reporting. We work closely with your 
-          organization to identify potential risks, establish appropriate controls, and ensure ongoing 
-          adherence to SOX requirements. By partnering with Blue Trail, you can have peace of mind 
-          knowing that your company's financial data and reporting practices are protected, transparent, 
-          and compliant, minimizing the risk of penalties and preserving your organization's reputation in the market.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <div class="contact-section">
-    <div class="contact-content">
-      <section id="contact-section"></section>
-      <h2>Contact Us</h2>
-      <p>Set-Up a free consultation with us today.</p>
-      <a href="https://forms.gle/hs3FEi8eEF5y9rhd6" class="get-started-btn">Get Started</a>
-    </div>
-<!--    <form class="contact-form">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="text" name="company_name" placeholder="Company Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="tel" name="phone" placeholder="Phone Number (Optional)">
-      <textarea name="message" placeholder="Message" rows="4" required></textarea>
-      <input type="submit" value="Submit">
-    </form>
--->
-  </div>
-    <footer>
-        <div class="footer-wrapper">
-            <p>contact@mybluetrail.com</p>
+          </div>
         </div>
-    </footer>
-    
-    <script>
-      function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-      }
-    </script>
+      </section>
 
-</body>
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="aboutus" class="py-6 section-about">
+
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-4 text-center mb-6">
+              <img class="shadow-collab" src="assets/img/gallery/about.gif" width="300" alt="..." style="border-radius:0.5rem;" />
+            </div>
+            <div class="col-lg-8 text-center text-md-start">
+              <h6 class="fs-3 fs-lg-5 lh-sm text-uppercase fw-bold text-primary">about us</h6>
+              <p class="my-4 fs-1 pe-xl-8">Blue Trail is a Houston-based Salesforce consulting firm operating as a sole proprietorship. Our primary focus is to deliver tailored Salesforce solutions for small businesses, helping them thrive in a competitive market. We are committed to providing our clients with exceptional service, guiding them through the complexities of the Salesforce ecosystem with our extensive expertise.</p>
+              <p class="mb-0 fs-1 pe-xl-8">At Blue Trail, our mission is to become the go-to Salesforce consulting firm for small businesses, recognized for our dedication to customer success, deep expertise, and commitment to building lasting relationships. We strive to help our clients navigate the ever-evolving Salesforce landscape, delivering tailored solutions that drive measurable results and position them for long-term success.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="benefits" class="section-benefit py-6">
+
+        <div class="container">
+          <h2 class="fw-bold fs-4 fs-lg-5 fs-xl-6 mb-5 text-primary text-center">Benefits</h2>
+          <div class="row g-5">
+            <div class="col-md-6 col-lg-4 d-flex text-center">
+              <div class="benefit-box">
+                <div class="badge bg-soft-danger p-3 rounded-3">
+                  <img class="icon-benefit" src="assets/img/icons/efficiency.svg" alt="efficiency" />
+                </div>
+                <h3 class="mt-5 mb-3 fw-bold">Efficient</h3>
+                <p class="lh-sm text-md-start mb-0">Processes and enhances collaboration, enabling businesses to close deals faster and improve customer relationships.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex text-center">
+              <div class="benefit-box">
+                <div class="badge bg-soft-danger p-3 rounded-3">
+                  <img class="icon-benefit" src="assets/img/icons/adaptation.svg" alt="adaptation" />
+                </div>
+                <h3 class="mt-5 mb-3 fw-bold">Adaptive</h3>
+                <p class="lh-sm text-md-start mb-0">Scalable and customizable, adapts to a company's evolving needs, ensuring seamless integration with new tools and features.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex text-center">
+              <div class="benefit-box">
+                <div class="badge bg-soft-danger p-3 rounded-3">
+                  <img class="icon-benefit" src="assets/img/icons/growth.svg" alt="growth" />
+                </div>
+                <h3 class="mt-5 mb-3 fw-bold">Insightful</h3>
+                <p class="lh-sm text-md-start mb-0">Provides valuable data insights and analytics, empowering businesses to make informed decisions and drive growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="soxcompliant" class="section-soxcompliant py-md-0">
+        <video autoplay muted loop id="bgVideo">
+          <source src="assets/video/bgvideo.mov" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-8 mx-auto my-6 text-center">
+              <div class="light-bg px-4 py-6">
+                <h2 class="fw-bold fs-4 fs-lg-5 fs-xl-6 mb-4 text-primary">SOX Compliance</h2>
+                <p class="mb-0">Blue Trail is dedicated to ensuring your business and its processes remain fully compliant with the Sarbanes-Oxley (SOX) regulations. Our comprehensive approach includes implementing robust internal controls, continuous monitoring, and conducting regular audits to safeguard the integrity of financial reporting. We work closely with your organization to identify potential risks, establish appropriate controls, and ensure ongoing adherence to SOX requirements. By partnering with Blue Trail, you can have peace of mind knowing that your company's financial data and reporting practices are protected, transparent, and compliant, minimizing the risk of penalties and preserving your organization's reputation in the market.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="contactus" class="section-contact">
+
+        <!-- <div class="bg-holder">
+        </div> -->
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 col-lg-8 mx-auto">
+              <h2 class="fw-bold fs-4 fs-lg-6 mb-4 text-white">Contact Us</h2>
+              <p class="fs-4 text-white">Set-Up a free consultation with us today.</p>
+              <a class="btn btn-white text-uppercase" href="https://forms.gle/hs3FEi8eEF5y9rhd6" target="_blank">get started</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="section-footer">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="fs-0 mb-0">
+                <a href="mailto:contact@mybluetrail.com" class="email-link">contact@mybluetrail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&amp;family=Montserrat:wght@200;300&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&amp;family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  </body>
+
 </html>
-
-
-
-
-
